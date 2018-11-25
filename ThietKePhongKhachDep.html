@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"type="text/css" href="du_an_nha.css"/>
+<link rel="stylesheet"type="text/css" href="slider.css"/>
+<link rel="stylesheet"type="text/css" href="contact.css"/>
+<link rel="stylesheet"type="text/css" href="Slide-content.css"/>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="Slider.js"></script>
+<script type="text/javascript" src="ho_tro_online.js"></script>
+<title>Thiết Kế Phòng Khách Đẹp</title>
+<script type="text/javascript">
+$(document).ready(function(){
+		$(window).scroll(function() {
+		if ($(document).scrollTop() > 500) 
+		{
+      		$("#menu").addClass("fix");
+    	}
+		else
+		{
+			$("#menu").removeClass("fix");
+    	}
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#menu li").hover(function(){
+			$(this).find("ul:first").slideDown(500);
+			},
+			function(){
+				$(this).find("ul:first").hide(300);
+			});
+			
+});
+</script>
+<style type="text/css">
+.fix {
+	position:fixed;
+	top: 0px;
+	z-index: 1000;
+	width:1279px;
+}
+#chat-online{ margin:0px auto; position:fixed; right:0; bottom:0; margin-right:24px;}
+#hotro{ padding:0px 0px; border:1px solid #ccc; margin:0px;width:300px;}
+#chat-online{width:300px;}
+div.content{ width:auto; border:1px solid #ccc; display:none;}
+.check{ font-family:#;}
+#send{padding: 5px 5px; width:100px;}
+.an-hien{margin-left:-6px;
+input{ width:200px;padding:5px 5px; font-family:#;}
+</style>
+</head>
+
+<body>
+
+<div id="main">
+<div id="logo"></div>
+    <div id="head">
+    	<div id="slider">
+        	<img class="slide" src="Image/bg1.jpg" stt="0" />
+            <img class="slide" src="Image/bg2.jpg" stt="1" style="display:none" />
+            <img class="slide" src="Image/bg3.jpg" stt="2" style="display:none" />
+            <img class="slide" src="Image/Azalea Homes/20181013093538-d682.jpg" stt="3" style="display:none" />
+            <img class="slide" src="Image/phongtroQuan3/20181025085154-26b9.jpg" stt="4" style="display:none" />
+            <a href="#" id="prev"> <img src="Image/prev.png" width="50px" height="50px" /></a>
+            <a href="#" id="next"> <img src="Image/next.png" width="50px" height="50px" /></a>
+         </div>
+    </div>
+    <div id="head-link">
+		<div id="menu">
+              <ul>
+                <li><a href="#">Thuê Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố </a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li>
+                        <li><a href="Biet_thu_ Azalea_Homes.html">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Văn phòng </a></li>
+                        <li><a href="#">Nhà trọ </a></li>
+                        <li><a href="#">Cửa hàng </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mua Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố</a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li>
+                        <li><a href="#">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Nhà riêng </a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Mua Đất</a>
+                 	<ul class="sub-menu">
+                        <li><a href="#">Đất nền dự án </a></li>
+                        <li><a href="#"><a href="https://thachpham.com/category/seo" data-wpel-link="internal">Đất thổ cư</a></a></li>
+                        <li><a href="#">Đất nông lâm nghiệp</a></li>
+                        <li><a href="#">Đất du lịch, nghĩ dưỡng</a></li>
+                 	</ul>
+      			</li>
+                <li><a href="#">Thiết Kế Nhà Đẹp</a>
+                <ul class="sub-menu">
+                <li><a href="#">Phòng khách</a></li>
+                <li><a href="#">Phòng tắm</a></li>
+                </ul></li>
+                <li><a href="#">Tin tức</a>
+                <ul class="sub-menu">
+                <li><a href="#">Thị trường</a></li>
+                <li><a href="#">Nhà hạnh phúc</a></li>
+                </ul>
+                </li>
+              </ul>
+		</div>
+    </div>
+     
+    <div id="right"> 
+    	<div class="timkiem"><!-- mở thẻ tìm kiếm-->
+                <form name="timkiem" action="" method="get" >
+                <h3 align="center" style="color:#F00"> Tìm ngay ngôi nhà trong mơ của bạn</h3>
+                <p> Với hơn 200.000 bất động sản tại SaigonRealestate</p><br />
+                <label for="name" style="color:#00F; font-weight:bold">Nhập tên dự án: </label>
+                <input type="text" style="width:200px" name="nhapsearch"  value="" placeholder="Ví dụ: Sunrise City" />               	
+                <select name="chonnha" style="width:200px" >
+                    <option value="1" selected="selected" > --Chọn loại nhà đất</option>
+                    <option value="2"> - Bán căn hộ chung cư</option>
+                    <optgroup label=" - Tất cả các loại nhà bán">
+                        <option value="3.1"> + Bán nhà riêng</option>
+                        <option value="3.2"> + Bán nhà biệt thự, liền kề</option>
+                        <option value="3.3"> + Bán nhà mặt phố</option>
+                     </optgroup>
+                     <optgroup label=" - Tất cả các loại đất bán" >
+                        <option value="4.1"> + Bán đất nền dự án</option>
+                        <option value="4.2"> + Bán đất</option>             
+                     </optgroup>
+                     <option value="5"> - Bán trang trại, khu nghỉ dưỡng</option>
+                     <option value="6"> - Bán khu nhà xưởng</option>
+                     <option value="7"> - Bán loại bất động sản khác</option>            
+                </select> 
+                <select name="chonquan" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn quận, huyện</option>
+                    <option value="1"> Quận 1 </option>
+                    <option value="2"> Quận 2 </option>
+                    <option value="3"> Quận 3 </option>
+                    <option value="4"> Quận 4 </option>
+                    <option value="5"> Quận 5 </option>
+                    <option value="6"> Quận 6 </option>
+                    <option value="7"> Quận 7 </option>
+                    <option value="8"> Quận 8 </option>
+                    <option value="9"> Quận 9 </option>
+                    <option value="10"> Quận 10 </option>
+                    <option value="11"> Quận 11 </option>
+                    <option value="12"> Quận 12 </option>
+                    <option value="13"> Huyện Bình Chánh </option>
+                    <option value="14"> Huyện Hóc Môn </option>
+                    <option value="15"> Huyện Cần Giờ </option>
+                    <option value="16">Huyện Nhà Bè </option>
+                    <option value="17"> Huyện Củ Chi </option>
+                    <option value="18"> Quận Bình Thạnh </option>
+                    <option value="19"> Quận Tân Bình </option>
+                    <option value="20"> Quận Phú Nhuận </option>
+                    <option value="21"> Quận Gò Vấp </option>
+                    <option value="22"> Quận Tân Phú</option>
+                    <option value="23"> Quận Thủ Đức </option>
+                </select>
+                <select name="dientich" style="width:200px">
+                    <option value="0" selected="selected">--Chọn diện tích--</option>
+                     <option value="2"> Chưa xác định </option>
+                     <option value="3"> <=30m2 </option>
+                     <option value="4"> 30 - 50 m2 </option> 
+                     <option value="5"> 50 - 80m2 </option>
+                     <option value="6"> 80 - 100m2 </option>
+                     <option value="7"> 100 - 150m2 </option>
+                     <option value="8"> 150 - 200m2 </option>
+                     <option value="9">200 - 250m2 </option>
+                     <option value="10">250 - 300m2 </option>
+                     <option value="11">300 - 500m2 </option>
+                     <option value="12">>= 500m2 </option>
+                 </select>
+                 <select name="mucgia" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn mức giá--</option>
+                    <option value="1"> Thỏa thuận</option>
+                    <option value="2">< 500 triệu</option>
+                    <option value="3">< 500 - 800 triệu</option>
+                    <option value="4">< 800 triệu - 1 tỷ </option>
+                    <option value="5">< 1 - 2 tỷ</option>
+                    <option value="6">< 2 - 3 tỷ</option>
+                    <option value="7">< 3 - 5 tỷ</option>
+                    <option value="8">< 5 - 7 tỷ</option>
+                    <option value="9">< 7 - 10 tỷ</option>
+                    <option value="10">< 10 - 20 tỷ</option>
+                    <option value="11">< 20 - 30 tỷ</option>
+                    <option value="12"><> 30 tỷ</option>                 
+                 </select><br />
+                 <input style="width:100px; height:40px" type="submit" name="submit" value="Tìm kiếm"/>              	
+            </form> 
+            </div><!-- đóng thẻ tìm kiếm-->
+            <div id="tintuc">
+            <h2 style="color:#F00"> Tin tức</h2>
+            <hr />
+            
+            
+            </div>   	       
+    </div><!-- đóng phần right-->
+    
+	<div id="content" style="width:1024px"> <br /> 
+    <h1 align="left" style="color:#F00"><font color="#000000"></font><i> Thiết kế phòng khách đẹp</i></h1>  <br /> 
+      <br />            
+          
+                    <div id="content-content"><!--mở phần giới thiệu dự án-->
+                    <br />
+                    <h2 align="left" style="color:#F00"> Nơi tiếp khách có một vị trí rất quan trọng, ảnh hưởng trực tiếp đến sự giàu có cũng như hạnh phúc của gia đình.</h2>
+                    </br>
+                    <p><b>1. Vị trí</b></p>
+                    </br>
+                    <p>Phòng khách nên được đặt ở nơi có ít nhất hai bức tường bao quanh, tránh sử dụng căn phòng nằm sâu trong nhà. Thiết kế phòng khách đẹp, hợp phong thủy sẽ giúp nguồn năng lượng sống, năng lượng tài năng đi vào nhà mà không bị ngăn trở hoặc dần tiêu tan vì phải đi qua các phòng khác trước khi đến nơi. Vị trí này còn đảm bảo các nguồn năng lượng trên luôn được tươi mới, mạnh mẽ, giúp cho phòng khách tràn đầy sinh khí.</p></br>
+                    <p style="text-align:center;">
+                      <img src="Image/ThietKePhongKhach/1-1-2548-1396001827.jpg" width="720" height="465"/></p>
+                      </br>
+                      <p><b>2. Diện tích và nội thất</b></p>
+                      </br>
+                      <p>Trước khi xây nhà hoặc mua nhà mới, gia chủ nên chú ý đến diện tích của phòng khách. Một căn phòng rộng rãi, thoáng mát phù hợp làm nơi tụ họp cho gia đình và khách mời. Khi đó, các nguồn năng lượng bổ trợ sẽ có cơ hội đi vào phòng và lan tỏa ra không gian xung quanh.</p></br>
+                      <p>Hãy bày trí đồ đạc tránh bị rối mắt, không kê quá nhiều đồ làm không gian căn phòng bị chật chội. Tránh kê đồ đạc vướng lối đi khiến nguồn năng lượng tốt bị trì trệ. Nên đặt bộ bàn ghế tựa lưng vào tường, không nên đặt ở giữa phòng để tránh những cảm giác thiếu an toàn ở khoảng trống sau lưng. Ngoài ra, bạn có thể lắp đặt một quả cầu pha lê trên trần nhà phòng khách để vô hiệu hóa những năng lượng tiêu cực.</p></br>
+                      <p>Khi thiết kế phòng khách bạn nên chọn màu sắc đồ đạc trang nhã, hài hòa với sơn tường và thảm. Có thể đặt những bình hoa tươi hay phấn thơm để căn phòng thêm tươi sắc và thơm mát. Riêng với đồ điện tử như tivi, máy tính (chứa năng lượng dương tốt) thì hãy đặt chúng ở vị trí bạn muốn bổ trợ, như hướng bắc (hỗ trợ sự nghiệp), hướng nam (công danh và sự công nhận).</p></br>
+                        <p style="text-align:center;">
+                      <img src="Image/ThietKePhongKhach/1-15-3909-1396001838.jpg"width="720" height="465" />      </p>
+                      </br>
+                      <p><b>3. Bày trí nội thất theo la bàn phong thủy</b></p>  
+                      </br> 
+                      <p>Với hướng bắc (đại diện cho năng lượng thủy), gia chủ có thể treo tranh thác nước, suối nguồn hoặc hình ảnh con thuyền hướng về phía người xem. Bạn có thể đặt một bình thủy sinh hoặc chậu cá cảnh bên trong nuôi 8 chú cá vàng và một cá đen, đặt một hòn non bộ nhỏ có dòng nước chảy về hướng căn phòng. Sử dụng sắc lam và đen chủ đạo trong đồ đạc tại hướng này cũng là lựa chọn phù hợp.</p></br>
+                      <p>Đối với hướng nam (năng lượng hỏa), bạn nên đặt những cây nến lớn, đẹp mắt; sử dụng đồ đạc bằng gỗ và có màu sắc như đỏ, hồng, da cảm và lục. Với hướng đông và đông nam (năng lượng mộc, thổ), gia chủ nên treo những bức tranh có khung gỗ, kê giá sách bằng gỗ, sử dụng màu lục và nâu là chính.                </p></br>
+                      <p>Ở hướng tây và tây bắc (năng lượng kim), gia chủ nên sử dụng tất cả đồ đạc bằng kim loại như khung tranh, đế nến và sử dụng các màu sắc chủ đạo như màu đồng, lam, vàng, xám. Đối với hướng đông bắc và tây nam (năng lượng thổ), gia chủ nên đặt những loại đá quý, khoáng sản, đồ gốm sứ hoặc thủy tinh, pha lê và sử dụng các tông màu như màu đất sét, nâu vàng, đỏ.</p>
+                      </br>
+                      <p><b>4. Sử dụng các biểu tượng bổ trợ sự thịnh vượng</b></p>
+                      </br>
+                      <p>Để gia tăng thịnh vượng, giàu có cho gia đình, trên bàn khách, gia chủ có thể đặt những vật như tiền xu mạ vàng hay thỏi vàng, đặt tượng Phật ở nơi trang trọng, tránh đặt dưới sàn nhà hoặc bên trái phòng. Ở phía đông của phòng nên đặt đồng xu cùng một dải ruy băng màu đỏ hoặc bức tượng một con rùa đầu rồng ngậm tiền xu, hướng nhìn vào phòng ở phía đông nam.</p>
+                      </br>
+                      <p>Ngoài ra, có thể treo bức tranh hình con rồng ở phía đông hay đặt một tượng voi cũng sẽ mang đến may mắn và tài lộc cho gia đình. Ở hai bên cửa ra vào phòng khách, hãy đặt hai bức tượng khuyển canh giữ nhà.</p>
+                      </br>
+                      <p style="text-align:center;">
+                      <img src="Image/ThietKePhongKhach/1-3-9937-1396001828.jpg" width="720" height="465" />               </p>
+                      </br>  
+                      <p><b>5. Thiết kế ánh sáng phù hợp</b>
+                      </p>
+                      </br>
+                      <p>Muốn thiết kế phòng khách đẹp thì hệ thống đèn điện, ánh sáng tự nhiên và cách sử dụng ánh sáng đóng một vai trò quan trọng trong việc thu hút nguồn năng lượng tốt cho phòng khách. Gia chủ nên bố trí phong phú các nguồn sáng như đèn bàn, đèn trần, đèn ốp tường và cửa sổ hợp lý để hứng ánh sáng và không khí tự nhiên. Cần lưu ý, tránh thiết kế hai hay nhiều cửa sổ trong phòng khách cùng một lúc để các nguồn năng lượng không bị tiêu hao hoặc gây nên tình trạng quá nhiều nguồn năng lượng ồ ạt, xung khắc nhau.</p>
+                      </br> 
+                      <p>Nguyên tắc phòng khách hợp phong thủy quan trọng là hướng, cách trang trí nội thất hợp lý và trên hết là tạo tâm lý thoải mái cho đại gia đình. Chỉ như vậy, không gian trong phòng khách mới thực sự là nơi gặp gỡ vui vẻ và đầy ắp tiếng cười của gia đình, bạn bè và người thân.</p>
+                      </br>
+                      <div id="tab-related" class="tab-content">
+  	    	<ul>
+    		<li><a href="http://noithatwonder.vn/Cau-thang-thong-minh" target="_self">Cầu thang thông minh</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Thiet-ke-noi-that-chung-cu" target="_self">Thiết kế nội thất chung cư</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Thiet-ke-phong-khach-hien-dai" target="_self">Thiết kế phòng khách hiện đại</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/thiet-ke-noi-that-phong-bep" target="_self">Thiết kế nội thất phòng bếp</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Xu-huong-thiet-ke-noi-that-hien-dai" target="_self">Xu hướng thiết kế nội thất hiện đại</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Thiet-ke-noi-that-van-phong-hien-dai" target="_self">Thiết kế nội thất văn phòng hiện đại</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Mau-noi-that-phong-ngu-dep" target="_self">Mẫu nội thất phòng ngủ đẹp</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Thiet-ke-noi-that-can-ho-thong-minh" target="_self">Thiết kế nội thất căn hộ thông minh</a></li>
+    	</ul>
+        	<ul>
+    		<li><a href="http://noithatwonder.vn/Trang-tri-noi-that" target="_self">Trang trí nội thất</a></li>
+    	</ul>
+      </div>
+     
+                    
+
+    </div><!--kết thúc phần content   --> 
+    <div id="footer">
+        <div class="copyright">
+            <div class="container">
+                <div class="footer-min">
+                    <p>
+                        Copyright 2018 - <a href="chu.html"> SaigonRealEstate</a><br/>
+                        Văn phòng thường trực tại Tp.HCM<br/>
+                        842/1/33 Nguyễn Đình Chiểu, Phường 3, Quận 3, Tp.HCM<br/>
+                        Điện thoại: (028) 39897939<br/>
+                        Email: saigonrealestate.vn<br/><br />
+	   <div>
+        <span style="text-transform: uppercase;font-weight: bold;line-height: 2;padding-right: 5px;">Follow us</span>
+        <a href="https://www.youtube.com/watch?v=6DlFbDHSW0Y&t=62s" target="_blank">
+            <img style="width: 30px;" src="Image/dutube.png">
+        </a>
+        <a href="https://www.facebook.com/groups/freetutsdotnet/" target="_blank">
+            <img style="width: 30px;" src="Image/fb.png">
+        </a>
+        <a href="https://plus.google.com/u/0/+createwebsitenet" target="_blank">
+            <img style="width: 30px;" src="Image/g+.png">
+        </a>
+        <a href="https://www.linkedin.com/company/create-website/" target="_blank">
+            <img style="width: 30px;" src="Image/in.png">
+        </a>
+        <a href="https://twitter.com/search?q=WebSite&src=tyah" target="_blank">
+            <img style="width: 30px;" src="Image/tweet.png">
+        </a>
+    </div>
+    
+                    </p>
+                </div><!-- end footer min -->
+            </div><!-- end container -->
+    </div>
+</div>
+<form id="chat-online" style=" border:double #0000FF; width:300px; background-color:#CFF">
+<div id="hotro"> <h3>Hỗ trợ tư vấn</h3> <img  src="Image/chat.jpg"/>
+<img src="Image/add.jpg" width="40"class="an-hien"/>
+</div>
+<div class="content">
+                    
+                    <table cellspacing="5px">
+                      	<tr>
+                        <td >
+                        <label for="name">Họ và Tên: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id="name" name="name" placeholder="Nguyễn Thị Thùy Trang">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="email">Email: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="email" id="lname" name="email" placeholder="trangnguyenahn@gmail.com">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="phone">Số điện thoại: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id=phone"" name="phone" placeholder="0963697461">
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>   
+                        <label for="mesenger">Tin nhắn: </label><br />
+                        </td>
+                        <td>
+                        <textarea style="width:200px; height: 100px" id="mesenger"name="mesenger" placeholder="Bạn cần chúng tôi tư vấn về gì? Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất"></textarea>
+                    	</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2" align="center">
+                        <input style=" background-color:#0F3; width:70px" type="submit" value="Submit">
+                        </td>
+                        </tr>
+                        </table>
+
+</div>
+</form>
+</body>
+    <script>// đoạn script cho content-right
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
+</html>

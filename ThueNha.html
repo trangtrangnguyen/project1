@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"type="text/css" href="SaiGonRealEstate.css"/>
+<link rel="stylesheet"type="text/css" href="slider.css"/>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="Slider.js"></script>
+<script type="text/javascript" src="ho_tro_online.js"></script>
+<title>Thuê chung cư</title>
+
+<script type="text/javascript">
+$(document).ready(function(){
+		$(window).scroll(function() {
+		if ($(document).scrollTop() > 500) 
+		{
+      		$("#menu").addClass("fix");
+    	}
+		else
+		{
+			$("#menu").removeClass("fix");
+    	}
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#menu li").hover(function(){
+			$(this).find("ul:first").slideDown(500);
+			},
+			function(){
+				$(this).find("ul:first").hide(300);
+			});
+			
+	});
+</script>
+<style type="text/css">
+.fix {
+	position:fixed;
+	top: 0px;
+	z-index: 1000;
+	width:1279px;
+}
+#chat-online{ margin:0px auto; position:fixed; right:0; bottom:0; margin-right:24px;}
+#hotro{ padding:0px 0px; border:1px solid #ccc; margin:0px;width:300px;}
+#chat-online{width:300px;}
+div.content{ width:auto; border:1px solid #ccc; display:none;}
+.check{ font-family:#;}
+#send{padding: 5px 5px; width:100px;}
+.an-hien{margin-left:-6px;
+input{ width:200px;padding:5px 5px; font-family:#;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+<div id="logo"></div>
+    <div id="head">
+    	<div id="slider">
+        	<img class="slide" src="Image/bg1.jpg" stt="0" />
+            <img class="slide" src="Image/bg2.jpg" stt="1" style="display:none" />
+            <img class="slide" src="Image/bg3.jpg" stt="2" style="display:none" />
+            <a href="#" id="prev"> <img src="Image/prev.png" width="50px" height="50px" /></a>
+            <a href="#" id="next"> <img src="Image/next.png" width="50px" height="50px" /></a>
+         </div>
+    </div>
+    <div id="head-link">
+		<div id="menu">
+              <ul>
+                <li><a href="#">Thuê Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố </a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li
+                        ><li><a href="#">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Văn phòng </a></li>
+                        <li><a href="#">Nhà trọ </a></li>
+                        <li><a href="#">Cửa hàng </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mua Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố</a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li>
+                        <li><a href="#">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Nhà riêng </a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Mua Đất</a>
+                 	<ul class="sub-menu">
+                        <li><a href="#">Đất nền dự án </a></li>
+                        <li><a href="#"><a href="https://thachpham.com/category/seo" data-wpel-link="internal">Đất thổ cư</a></a></li>
+                        <li><a href="#">Đất nông lâm nghiệp</a></li>
+                        <li><a href="#">Đất du lịch, nghĩ dưỡng</a></li>
+                 	</ul>
+      			</li>
+                <li><a href="#">Thiết Kế Nhà Đẹp</a>
+                <ul class="sub-menu">
+                <li><a href="#">Phòng khách</a></li>
+                <li><a href="#">Phòng tắm</a></li>
+                </ul></li>
+                <li><a href="#">Tin tức</a>
+                <ul class="sub-menu">
+                <li><a href="#">Thị trường</a></li>
+                <li><a href="#">Nhà hạnh phúc</a></li>
+                </ul>
+                </li>
+              </ul>
+		</div>
+    </div>
+    <div id="left">
+    	<h2> Bất động sản nổi bật</h2>
+        <a class="link" href="https://www.facebook.com/groups/freetutsdotnet/" target="_blank">Khu dân cư Đường 21 phường Long Thạnh Mỹ</a><br /><br />
+        <a class="link" href="Biet_thu_ Azalea_Homes.html" target="_blank">Biệt thự song lập lập Azalea Homes</a><br /><br />
+        <a class="link" href="PhongtroQuan3.html" target="_blank">Cho thuê nhà trọ, phòng trọ tại 543/65 Nguyễn Đình Chiểu, P2, Quận 3. HCM. </a><br /><br />
+        <a class="link" href="Ban-dat-nen-Quan2.html" target="_blank">Bán đất nền dự án tại Khu dân cư Thạnh Mỹ Lợi - Quận 2 - Hồ Chí Minh </a><br /><br />
+
+    </div>
+    <div id="right"> 
+        <form name="timkiem" action="" method="get">
+                <h3> Tìm ngay ngôi nhà trong mơ của bạn</h3>
+                <p> Với hơn 200.000 bất động sản tại SaigonRealestate</p>
+                <input type="text" style="width:200px" name="nhapsearch"  value="" /><br />
+                Nhập tên dự án, Ví dụ: Sunrise City      	
+                <select name="chonnha" style="width:200px" >
+                    <option value="1" selected="selected" > --Chọn loại nhà đất</option>
+                    <option value="2"> - Bán căn hộ chung cư</option>
+                    <optgroup label=" - Tất cả các loại nhà bán">
+                        <option value="3.1"> + Bán nhà riêng</option>
+                        <option value="3.2"> + Bán nhà biệt thự, liền kề</option>
+                        <option value="3.3"> + Bán nhà mặt phố</option>
+                     </optgroup>
+                     <optgroup label=" - Tất cả các loại đất bán" >
+                        <option value="4.1"> + Bán đất nền dự án</option>
+                        <option value="4.2"> + Bán đất</option>             
+                     </optgroup>
+                     <option value="5"> - Bán trang trại, khu nghỉ dưỡng</option>
+                     <option value="6"> - Bán khu nhà xưởng</option>
+                     <option value="7"> - Bán loại bất động sản khác</option>            
+                </select> 
+                <select name="chonquan" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn quận, huyện</option>
+                    <option value="1"> Quận 1 </option>
+                    <option value="2"> Quận 2 </option>
+                    <option value="3"> Quận 3 </option>
+                    <option value="4"> Quận 4 </option>
+                    <option value="5"> Quận 5 </option>
+                    <option value="6"> Quận 6 </option>
+                    <option value="7"> Quận 7 </option>
+                    <option value="8"> Quận 8 </option>
+                    <option value="9"> Quận 9 </option>
+                    <option value="10"> Quận 10 </option>
+                    <option value="11"> Quận 11 </option>
+                    <option value="12"> Quận 12 </option>
+                    <option value="13"> Huyện Bình Chánh </option>
+                    <option value="14"> Huyện Hóc Môn </option>
+                    <option value="15"> Huyện Cần Giờ </option>
+                    <option value="16">Huyện Nhà Bè </option>
+                    <option value="17"> Huyeyenj Củ Chi </option>
+                    <option value="18"> Quận Bình Thạnh </option>
+                    <option value="19"> Quận Tân Bình </option>
+                    <option value="20"> Quận Phú Nhuận </option>
+                    <option value="21"> Quận Gò Vấp </option>
+                    <option value="22"> Quận Tân Phú</option>
+                    <option value="23"> Quận Thủ Đức </option>
+                </select>
+                <select name="dientich" style="width:200px">
+                    <option value="0" selected="selected">--Chọn diện tích--</option>
+                     <option value="2"> Chưa xác định </option>
+                     <option value="3"> <=30m2 </option>
+                     <option value="4"> 30 - 50 m2 </option> 
+                     <option value="5"> 50 - 80m2 </option>
+                     <option value="6"> 80 - 100m2 </option>
+                     <option value="7"> 100 - 150m2 </option>
+                     <option value="8"> 150 - 200m2 </option>
+                     <option value="9">200 - 250m2 </option>
+                     <option value="10">250 - 300m2 </option>
+                     <option value="11">300 - 500m2 </option>
+                     <option value="12">>= 500m2 </option>
+                 </select>
+                 <select name="mucgia" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn mức giá--</option>
+                    <option value="1"> Thỏa thuận</option>
+                    <option value="2">< 500 triệu</option>
+                    <option value="3">< 500 - 800 triệu</option>
+                    <option value="4">< 800 triệu - 1 tỷ </option>
+                    <option value="5">< 1 - 2 tỷ</option>
+                    <option value="6">< 2 - 3 tỷ</option>
+                    <option value="7">< 3 - 5 tỷ</option>
+                    <option value="8">< 5 - 7 tỷ</option>
+                    <option value="9">< 7 - 10 tỷ</option>
+                    <option value="10">< 10 - 20 tỷ</option>
+                    <option value="11">< 20 - 30 tỷ</option>
+                    <option value="12"><> 30 tỷ</option>                 
+                 </select>
+                 <input type="submit" name="submit" value="Tìm kiếm"/>              	
+            </form>    	       
+    </div>
+	<div id="content">
+    <input type="hidden" name="ctl00$LeftMainContent$_productSearchResult$hddFilter" id="LeftMainContent__productSearchResult_hddFilter" />
+<div class="Repeat">
+<h2>
+Cho thuê chung cư ở Hồ Chí Minh</h2>
+<div class="order">
+<span>Sắp xếp theo: </span>
+<select name="ctl00$LeftMainContent$_productSearchResult$ddlSortReult" onchange="sortchange();setTimeout(&#39;__doPostBack(\&#39;ctl00$LeftMainContent$_productSearchResult$ddlSortReult\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlSortReult">
+<option value="0">Th&#244;ng thường</option>
+<option value="1">Tin mới nhất</option>
+<option value="2">Gi&#225; thấp nhất</option>
+<option value="3">Gi&#225; cao nhất</option>
+<option value="4">Diện t&#237;ch nhỏ nhất</option>
+<option value="5">Diện t&#237;ch lớn nhất</option>
+</select>
+</div>
+</div>
+</div>
+<div class="clear">
+</div>
+
+<div class='vip0 search-productItem'>
+<div class='p-title'>
+<h3><a href='chungcuQuan12.html' title='Cho thuê&#234; chung cư V&#245; Green Mark' style="text-rendering: optimizelegibility;">
+Cho thuê chung Green Mark quận 12 
+</a></h3>
+</div>
+<div class='p-main'>
+<div class='p-main-image-crop'>
+<a class="product-avatar" href='chungcuQuan12.html' title='Cho thuê&#234; chung cưV&#245; Green Mark'
+onclick="">
+<img class="product-avatar-img" src='Image/ChungCuQ12/images.jpg' alt='Cho thuê&#234; chung cư V&#245; Green Mark' />
+</a>
+</div>
+<div class='p-content'>
+<div class='p-main-text' style="text-rendering: optimizelegibility; ">Dự án Green Mark do Công ty TNHH tư vấn và kinh doanh nhà Đạt Gia làm chủ đầu tư với quy mô 18 tầng, 2 tầng để xe, 1 tầng trung tâm thương mại. Dự án sau hoàn thiện sẽ cung ứng cho thị trường nhà ở quận 12 nói riêng và Tp.HCM nói chung 751 căn hộ chung cư hiện đại với thiết kế linh hoạt từ 47-70m2/căn.</div>
+</div>
+<div class="clear"></div>
+<div class="p-bottom-crop fix-p-bottom-crop">
+<div class='floatleft'>
+Giá: 
+<span class="product-price">20 triệu/tháng</span>&nbsp;
+Diện tích: 
+<span class="product-area">11.750 m2</span>&nbsp;
+Quận/Huyện: 
+<span class="product-city-dist">
+Quận 12, Hồ Chí Minh
+</span>
+</div>
+<div class='floatright mar-right-10'>12/11/2018</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear10"></div>
+</div>
+
+    </div>
+
+    <div id="footer">
+        <div class="copyright">
+            <div class="container">
+                <div class="footer-col">
+                    <p>
+                        Copyright 2018 - <a href="chu.html"> SaigonRealEstate</a><br/>
+                        Văn phòng thường trực tại Tp.HCM<br/>
+                        842/1/33 Nguyễn Đình Chiểu, Phường 3, Quận 3, Tp.HCM<br/>
+                        Điện thoại: (028) 39897939<br/>
+                        Email: saigonrealestate.vn<br/><br />
+	   <div>
+        <span style="text-transform: uppercase;font-weight: bold;line-height: 2;padding-right: 5px;">Follow us</span>
+        <a href="https://www.youtube.com/watch?v=6DlFbDHSW0Y&t=62s" target="_blank">
+            <img style="width: 30px;" src="Image/dutube.png">
+        </a>
+        <a href="https://www.facebook.com/groups/freetutsdotnet/" target="_blank">
+            <img style="width: 30px;" src="Image/fb.png">
+        </a>
+        <a href="https://plus.google.com/u/0/+createwebsitenet" target="_blank">
+            <img style="width: 30px;" src="Image/g+.png">
+        </a>
+        <a href="https://www.linkedin.com/company/create-website/" target="_blank">
+            <img style="width: 30px;" src="Image/in.png">
+        </a>
+        <a href="https://twitter.com/search?q=WebSite&src=tyah" target="_blank">
+            <img style="width: 30px;" src="Image/tweet.png">
+        </a>
+    </div>
+    
+                    </p>
+                </div><!-- end footer cold -->
+            </div><!-- end container -->
+    </div>
+</div>
+<form id="chat-online" style=" border:double #0000FF; width:300px; background-color:#CFF">
+<div id="hotro"> <h3>Hỗ trợ tư vấn</h3> <img  src="Image/chat.jpg"/>
+<img src="Image/add.jpg" width="40"class="an-hien"/>
+</div>
+<div class="content">
+                    <table cellspacing="5px">
+                      	<tr>
+                        <td >
+                        <label for="name">Họ và Tên: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id="name" name="name" placeholder="Nguyễn Thị Thùy Trang">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="email">Email: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="email" id="lname" name="email" placeholder="trangnguyenahn@gmail.com">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="phone">Số điện thoại: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id=phone"" name="phone" placeholder="0963697461">
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>   
+                        <label for="mesenger">Tin nhắn: </label><br />
+                        </td>
+                        <td>
+                        <textarea style="width:200px; height: 100px" id="mesenger"name="mesenger" placeholder="Bạn cần chúng tôi tư vấn về gì? Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất"></textarea>
+                    	</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2" align="center">
+                        <input style=" background-color:#0F3; width:70px" type="submit" value="Submit">
+                        </td>
+                        </tr>
+                        </table>
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet"type="text/css" href="SaiGonRealEstate.css"/>
+<link rel="stylesheet"type="text/css" href="slider.css"/>
+<link rel="stylesheet"type="text/css" href="Slide-content_home.css"/>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="Slider.js"></script>
+<script type="text/javascript" src="ho_tro_online.js"></script>
+<title>SaiGonRealEstate</title>
+
+<script type="text/javascript">
+$(document).ready(function(){
+		$(window).scroll(function() {
+		if ($(document).scrollTop() > 500) 
+		{
+      		$("#menu").addClass("fix");
+    	}
+		else
+		{
+			$("#menu").removeClass("fix");
+    	}
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#menu li").hover(function(){
+			$(this).find("ul:first").slideDown(500);
+			},
+			function(){
+				$(this).find("ul:first").hide(300);
+			});
+			
+	});
+</script>
+<style type="text/css">
+.fix {
+	position:fixed;
+	top: 0px;
+	z-index: 1000;
+	width:1279px;
+}
+#chat-online{ margin:0px auto; position:fixed; right:0; bottom:0; margin-right:24px;}
+#hotro{ padding:0px 0px; border:1px solid #ccc; margin:0px;width:300px;}
+#chat-online{width:300px;}
+div.content{ width:auto; border:1px solid #ccc; display:none;}
+.check{ font-family:#;}
+#send{padding: 5px 5px; width:100px;}
+.an-hien{margin-left:-6px;
+input{ width:200px;padding:5px 5px; font-family:#;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="main">
+	<div id="logo"></div>
+    <div id="head">
+    	<div id="slider">
+        	<img class="slide" src="Image/bg1.jpg" stt="0" />
+            <img class="slide" src="Image/bg2.jpg" stt="1" style="display:none" />
+            <img class="slide" src="Image/bg3.jpg" stt="2" style="display:none" />
+            <a href="#" id="prev"> <img src="Image/prev.png" width="50px" height="50px" /></a>
+            <a href="#" id="next"> <img src="Image/next.png" width="50px" height="50px" /></a>
+         </div>
+    </div>
+    <div id="head-link">
+		<div id="menu">
+              <ul>
+                <li><a href="#">Thuê Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố </a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li
+                        ><li><a href="#">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Văn phòng </a></li>
+                        <li><a href="#">Nhà trọ </a></li>
+                        <li><a href="#">Cửa hàng </a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mua Nhà</a>
+                	<ul class="sub-menu">
+                        <li><a href="#">Chung Cư </a></li>
+                        <li><a href="#">Nhà mặt phố</a></li>
+                        <li><a href="#">Nhà phố thương mại </a></li>
+                        <li><a href="#">Nhà biệt thự </a></li>
+                        <li><a href="#">Nguyên căn </a></li>
+                        <li><a href="#">Nhà riêng </a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Mua Đất</a>
+                 	<ul class="sub-menu">
+                        <li><a href="#">Đất nền dự án </a></li>
+                        <li><a href="#"><a href="#">Đất thổ cư</a></a></li>
+                        <li><a href="#">Đất nông lâm nghiệp</a></li>
+                        <li><a href="#">Đất du lịch, nghĩ dưỡng</a></li>
+                 	</ul>
+      			</li>
+                <li><a href="#">Thiết Kế Nhà Đẹp</a>
+                <ul class="sub-menu">
+                <li><a href="#">Phòng khách</a></li>
+                <li><a href="#">Phòng tắm</a></li>
+                </ul></li>
+                <li><a href="#">Tin tức</a>
+                <ul class="sub-menu">
+                <li><a href="#">Thị trường</a></li>
+                <li><a href="#">Nhà hạnh phúc</a></li>
+                </ul>
+                </li>
+              </ul>
+		</div>
+    </div>
+    <div id="left">
+    	<h2> Bất động sản nổi bật</h2>
+        <div id="le">
+        <a class="link" href="PhuHoangAnh.html" target="_blank"><br /><br />Căn hộ Phú Hoàng Anh</a>
+        </div>
+        <div id="chan">
+        <a class="link" href="Biet_thu_ Azalea_Homes.html" target="_blank"> <br />Biệt thự song lập lập Azalea Homes</a>
+        </div>
+        <div id="le">
+        <a class="link" href="PhongtroQuan3.html" target="_blank">Cho thuê nhà trọ, phòng trọ tại 543/65 Nguyễn Đình Chiểu, P2, Quận 3. HCM. </a>
+        </div>
+        <div id="chan">
+        <a class="link" href="Ban-dat-nen-Quan2.html" target="_blank"><br />Bán đất nền dự án tại Khu dân cư Thạnh Mỹ Lợi - Quận 2 - Hồ Chí Minh </a>
+        </div>
+        <div id="le">
+        <a class="link" href="ThietKePhongKhachDep.html" target="_blank"><br /><br />Thiết kế phòng khách đẹp </a>
+        </div>
+        <div id="chan">
+        <a class="link" href="BanChungCuQ2.html" target="_blank"><br />Dự án Căn Hộ GEM RIVERSIDE Hồ Chí Minh </a>
+        </div>
+        <div id="le">
+        <a class="link" href="CanHoLUXGARDEN.html" target="_blank"><br />Căn Hộ View Sông Luxgarden Quận 7 </a>
+        </div>
+        <div id="chan">
+        <a class="link" href="NhaMatPho.html" target="_blank"><br />	Cho thuê mặt tiền Võ Văn Tần, quận 3 Hồ Chí Minh </a>
+        </div>
+        
+        
+        <div id="content-subject">
+        <br />
+        Thiết kế nhà đẹp
+        </div>
+            <div id="right-noibat">
+            <img src="Image/ThietKePhongKhach/1-15-3909-1396001838.jpg" width="200px" height="185px" />
+            <p align="center"> <a class="link3" href="ThietKePhongKhachDep.html"><b><br /> Phòng khách Châu Âu</b></a></p>
+            </div> 
+            <div id="right-noibat">
+            <img src="Image/PhongTam/cach-thiet-ke-phong-tam-xinh.jpg" width="200px" height="185px" />
+            <p align="center"> <a class="link3" href="PhongTam.html"><b><br /> Phòng tắm Thiên Đường</b></a></p>
+            </div> 
+            <div id="right-noibat">
+            <img src="Image/phongtroQuan3/20180924211424-7bf1_wm.jpg" width="200px" height="185px" />
+            <p align="center"> <a class="link3" href="Biet_thu_ Azalea_Homes.html"><b><br /> Phòng ngủ người lớn</b><br /></a></p>
+            </div>
+            </div>	
+
+    </div>
+    <div id="right"> 
+    	<div class="timkiem"><!-- mở thẻ tìm kiếm-->
+                <form name="timkiem" action="" method="get" >
+                <h3 align="center" style="color:#F00"> Tìm ngay ngôi nhà trong mơ của bạn</h3>
+                <p> Với hơn 200.000 bất động sản tại SaigonRealestate</p><br />
+                <label for="name" style="color:#00F; font-weight:bold">Nhập tên dự án: </label>
+                <input type="text" style="width:200px" name="nhapsearch"  value="" placeholder="Ví dụ: Sunrise City" />               	
+                <select name="chonnha" style="width:200px" >
+                    <option value="1" selected="selected" > --Chọn loại nhà đất</option>
+                    <option value="2"> - Bán căn hộ chung cư</option>
+                    <optgroup label=" - Tất cả các loại nhà bán">
+                        <option value="3.1"> + Bán nhà riêng</option>
+                        <option value="3.2"> + Bán nhà biệt thự, liền kề</option>
+                        <option value="3.3"> + Bán nhà mặt phố</option>
+                     </optgroup>
+                     <optgroup label=" - Tất cả các loại đất bán" >
+                        <option value="4.1"> + Bán đất nền dự án</option>
+                        <option value="4.2"> + Bán đất</option>             
+                     </optgroup>
+                     <option value="5"> - Bán trang trại, khu nghỉ dưỡng</option>
+                     <option value="6"> - Bán khu nhà xưởng</option>
+                     <option value="7"> - Bán loại bất động sản khác</option>            
+                </select> 
+                <select name="chonquan" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn quận, huyện</option>
+                    <option value="1"> Quận 1 </option>
+                    <option value="2"> Quận 2 </option>
+                    <option value="3"> Quận 3 </option>
+                    <option value="4"> Quận 4 </option>
+                    <option value="5"> Quận 5 </option>
+                    <option value="6"> Quận 6 </option>
+                    <option value="7"> Quận 7 </option>
+                    <option value="8"> Quận 8 </option>
+                    <option value="9"> Quận 9 </option>
+                    <option value="10"> Quận 10 </option>
+                    <option value="11"> Quận 11 </option>
+                    <option value="12"> Quận 12 </option>
+                    <option value="13"> Huyện Bình Chánh </option>
+                    <option value="14"> Huyện Hóc Môn </option>
+                    <option value="15"> Huyện Cần Giờ </option>
+                    <option value="16">Huyện Nhà Bè </option>
+                    <option value="17"> Huyện Củ Chi </option>
+                    <option value="18"> Quận Bình Thạnh </option>
+                    <option value="19"> Quận Tân Bình </option>
+                    <option value="20"> Quận Phú Nhuận </option>
+                    <option value="21"> Quận Gò Vấp </option>
+                    <option value="22"> Quận Tân Phú</option>
+                    <option value="23"> Quận Thủ Đức </option>
+                </select>
+                <select name="dientich" style="width:200px">
+                    <option value="0" selected="selected">--Chọn diện tích--</option>
+                     <option value="2"> Chưa xác định </option>
+                     <option value="3"> <=30m2 </option>
+                     <option value="4"> 30 - 50 m2 </option> 
+                     <option value="5"> 50 - 80m2 </option>
+                     <option value="6"> 80 - 100m2 </option>
+                     <option value="7"> 100 - 150m2 </option>
+                     <option value="8"> 150 - 200m2 </option>
+                     <option value="9">200 - 250m2 </option>
+                     <option value="10">250 - 300m2 </option>
+                     <option value="11">300 - 500m2 </option>
+                     <option value="12">>= 500m2 </option>
+                 </select>
+                 <select name="mucgia" style="width:200px">
+                    <option value="0" selected="selected"> --Chọn mức giá--</option>
+                    <option value="1"> Thỏa thuận</option>
+                    <option value="2">< 500 triệu</option>
+                    <option value="3">< 500 - 800 triệu</option>
+                    <option value="4">< 800 triệu - 1 tỷ </option>
+                    <option value="5">< 1 - 2 tỷ</option>
+                    <option value="6">< 2 - 3 tỷ</option>
+                    <option value="7">< 3 - 5 tỷ</option>
+                    <option value="8">< 5 - 7 tỷ</option>
+                    <option value="9">< 7 - 10 tỷ</option>
+                    <option value="10">< 10 - 20 tỷ</option>
+                    <option value="11">< 20 - 30 tỷ</option>
+                    <option value="12"><> 30 tỷ</option>                 
+                 </select><br />
+                 <input style="width:100px; height:40px" type="submit" name="submit" value="Tìm kiếm"/>              	
+            </form> 
+            </div><!-- đóng thẻ tìm kiếm-->
+            <div id="content-subject">
+        <br />
+        Dự án nổi bật
+        </div>
+            <div id="right-noibat">
+            <img src="Image/BanChungCuQ7/căn-hộ-gem-riverisde-6.jpg" width="250px" height="245px" />
+            <p align="center"> <a class="link3" href="chungcuQuan7.html"><b><br />Officetel South Gate Tower </b></a></p>
+            </div> 
+            <div id="right-noibat">
+            <img src="Image/Hinode City.jpg" width="250px" height="242px" />
+            <p align="center"> <a class="link3" href="https://batdongsan.com.vn/khu-phuc-hop-hai-ba-trung/hinode-city-pj1103?utm_source=self&utm_medium=cpc&utm_campaign=projecthighlight&utm_term=pj1103"><b><br /> Hinode City</b></a></p>
+            </div> 
+            <div id="right-noibat">
+            <img src="Image/Cityland Park Hills.jpg" width="250px" height="230px" />
+            <p align="center"> <a class="link3" href="https://batdongsan.com.vn/khu-do-thi-moi-go-vap/cityland-park-hills-pj2409?utm_source=self&utm_medium=cpc&utm_campaign=projecthighlight&utm_term=pj2409"><b><br /> Cityland Park Hills</b></a></p>
+            </div> 
+            <div id="right-noibat">
+            <img src="Image/duan.jpg" width="250px" height="230px" />
+            <p align="center"> <a class="link3" href="https://homedy.com/vincity-ocean-park-mo-dang-ki-xem-nha-mau-ck-cao-len-den-hon-125-ho-tro-vay-lai-suat-0-es731299?src=home_box_product"><b><br /> Vincity Ocean Park</b></a></p>
+            </div>	       
+    </div><!-- đóng phần right-->
+    
+	<div id="content">
+    	<font style=" font-size:20px; font-weight:bold" >
+        <marquee behavior="alternate" style="background:#FFC; height:50px"> <br />BẤT ĐỘNG SẢN MỚI</marquee></font>
+    	<div>
+            <div id="content-center">
+            <div class="hinh">
+            <div class="slideshow-content">
+                <div class="mySlides hinh">
+                <img src="Image/Dat-nen-Q2/20161006141802-e358.jpg" width="320px" height="220px" />  
+                </div>
+                 <div class="mySlides hinh">
+                 <img src="Image/Dat-nen-Q2/20161006141815-d5f5.jpg" width="320px" height="220px" /> 
+                 </div>
+        
+                <div class="mySlides hinh">
+                   <img src="Image/Dat-nen-Q2/thumb640x430.113454.jpg" height="220px" /> 
+                </div>
+                
+                <div class="mySlides hinh">
+                   <img src="Image/Dat-nen-Q2/20180817092922-f4df_wm.jpg" width="320px" height="220px" />
+                </div>           
+                      
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+              </div>
+              </div>
+        
+
+            <div class="text">
+            <p> <a class="link2" href="Ban-dat-nen-Quan2.html"><br /> <b>Bán đất nền dự án tại Khu dân cư Thạnh Mỹ Lợi</b></a> <br /><br /><b><a href="Ban-dat-nen-Quan2.html" style="color:#000 !important; text-decoration:none"> Khu đất nền hướng Đông Bắc dọc theo bờ sông Sài Gòn, có lợi thế nằm sát Trung tâm đô thị Thủ Thiêm và tuyến đường giao thông quan trọng như Đại lộ Đông Tây, đường Xa lộ Vành đai phía đông đi quận 7 ...</a></b> <br /> <i> Đường Trương Văn Bang, Phường Thạnh Mỹ Lợi, Quận 2, Hồ Chí Minh </i><br /><br /><hr /><br /><b> 60 triệu/m<sup>2</sup> </b> &emsp; &emsp; &emsp;  119.000 m<sup>2</sup><br /></p><br />
+            </div>
+            </div>
+            <div id="content-center">
+            <div class="hinh">
+            <img src="Image/BanDatHocMon/08084af85f494b8f809572a13d1290d0.jpg" width="320px" height="220px" />
+            </div>    
+            <div class="text">
+            <p> <a class="link2" href="BandatnenHocMon.html"><br /> <b>Dự án Đất Xanh -một siêu nền mới mang sức sống xanhi</b></a> <br /><br /><b><a href="BandatnenHocMon.html" style="color:#000 !important; text-decoration:none"> Khu đất nền hướng Tây Nam nằm ngay mặt tiền đường Ngô Quyền, đường trải nhựa thông thoáng, đèn đường đầy đủ, đã có sổ hồng riêng ...</a></b> <br /> <i> Nguyễn Văn Bứa nối dài , thuộc xã Xuân Thới Thượng Hóc Môn, Hồ Chí Minh </i><br /><br /><hr /><br /><b> 550 triệu/nền </b> &emsp; &emsp; &emsp;  100 m<sup>2</sup>/nền<br /></p><br />
+            </div>
+            </div>
+            <div id="content-center">
+            <div class="hinh">
+            <img src="Image/Dat-nen-Q2/thumb640x430.113454.jpg" width="320px" height="220px" />
+            </div>    
+            <div class="text">
+            <p> <a class="link2" href="DatNenDuAnQBC.html"><br /> <b>Bán đất nền dự án KDC Đất Nam Luxury, Bình Chánh.</b></a> <br /><br /><b><a href="DatNenDuAnQBC.html" style="color:#000 !important; text-decoration:none"> Đất nền Bình Chánh khu dân cư đô thị mới của nhà nước đang phát triển nhất khu Tây Sài Gòn, dự án thuộc quy hoạch của nhà nước mang lại cuộc sống cho người an cư đầy đủ mọi tiện ích nhất. ...</a></b> <br /><br/> <i> Xã Bình Chánh, Huyện Bình Chánh, TP Hồ Chí Minh. </i><br /><br /><hr /><br /><b> 10 triệu/m<sup>2</sup> </b> &emsp; &emsp; &emsp;  100 m<sup>2</sup><br /></p><br />
+            </div>
+            </div>
+    	<div id="content-subject">
+        <br />
+        <marquee behavior="alternate">MUA BÁN VÀ CHO THUÊ CHUNG CƯ</marquee>
+        </div>
+    	<div id="content-top">
+        	<div id="content-left-left">
+            <img src="Image/BanChungCuQ7/căn-hộ-gem-riverisde-6.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="chungcuQuan7.html"><b> Căn hộ Officetel South Gate Tower đẳng cấp Châu Âu</b></a> <br /><br /><i> Mặt tiền Nguyễn Thị Thập,P. Bình Thuận, Quận 7, TP. Hồ Chí Minh.</i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            
+            </div>
+            <div id="content-center-center">
+            <img src="Image/Chung cư Goldora Plaza/images (2).jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="GOLDORA PLAZA.html"> <b>Chung cư Goldora Plaza nhà Bè</b></a><br /><br /> <i>Đường Lê Văn Lương, Xã Phước Kiển, Nhà Bè, Hồ Chí Minh </i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            
+            </div>
+            <div id="content-right-right">
+            <img src="Image/ChungCuQ12/20181112140953-c1b9.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="chungcuQuan12.html"><b> Căn hộ chung cư Green Mark Quận 12</b></a> <br /><br /> 	<i>Đường Lê Thị Riêng, Phường Thới An, Quận 12, Hồ Chí Minh</i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            </div>
+        </div>
+          <div id="content-subject">
+          <br />
+           <marquee behavior="alternate">MUA BÁN VÀ CHO THUÊ NHÀ MẶT PHỐ </marquee>
+        </div>
+        <div id="content-top">
+        	<div id="content-left-left">
+            <img src="Image/NhaMatPhoQTD/dsc-0039-636769252661171543.jpg_800x450.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="NhaMatPhoQTD.html"> <b>Bán hoặc cho thuê nhà mặt phố, gần ngã 4 Lê Văn Chí – Linh Trung </b></a><br /><br /> <i>Đường Lê Văn Chí, Phường Linh Trung, Quận Thủ Đức, TP Hồ Chí Minh </i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            
+            </div>
+            <div id="content-center-center">
+            <img src="Image/NhaMatPho/20181112115642-0ad4_wm.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="NhaMatPho.html"> <b>Bán hoặc cho thuê nhà mặt tiền trung tâm đường Võ Văn Tần </b></a><br /><br /> <i>Đường Võ Văn Tần, Phường 6, Quận 3, Hồ Chí Minh</i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            
+            </div>
+            <div id="content-right-right">
+            <img src="Image/NhaMatPhoQ3/45651775-879713845752081-3804208016178282496-n-636773830992100943.jpg_768x480.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <a class="link2" href="NhaMatPhoQ3.html"> <b>Cho thuê nhà mặt phố trung tâm đường Điện Biên Phủ Quận 3</b></a> <br /><br /><i>Đường Điện Biên Phủ, Phường 7, Quận 3, TP Hồ Chí Minh</i><br /><br /><hr /><br /><span style="padding-left:10px; font-size:15px"> 12 - 18 triệu/tháng</span></p><br />
+            
+            </div>
+            </div>
+            </div>
+
+    </div><!--kết thúc phần content   --> 
+   <div id="content1"><br /><br />
+   <h1 align="center">Bạn vẫn chưa tìm được ngôi nhà ưng ý của mình ?</h1><br />
+<p align="center" style="color:#999; font-style:italic"><b>Đăng ký nhận ngay thông tin và giá ưu đãi mới nhất. </b>  </p>
+    	<div id="contact" align="center"> 
+                    <form action=""> 
+                                    
+                    <table cellspacing="5px";align="center">
+                      	<tr>
+                        <td >
+                        <input style="width:300px; height:30px" type="text" id="name" name="name" placeholder="Họ và tên">
+                        </td>
+                        <td>
+						<input style="width:300px; height:30px" type="text" id="phone" name="phone" placeholder="Số điện thoại">
+                        </td>
+                        </tr>                       
+                        <tr>
+                        <td colspan="2" align="center">
+                        <input type="submit" value="Đăng Ký">
+                        </td>
+                        </tr>
+                        </table>
+                      </form>
+			</div>
+
+    </div>
+  <div id="content2">
+    <div id="content-subject"><br />TIN TỨC </div>
+
+    <div id="content-left-left" style="margin-left:60px">
+    <img src="Image/tintuc1.jpg" width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <i>22/10/2018</i><br /> <a class="link2" href="https://homedy.com/news/thiet-ke-xay-dung-nha-o-thoi-40-lua-chon-tu-don-vi-thiet-ke-cho-den-nha-cung-cap-san-pham-chi-trong-10-phut-ne3973?src=home_box_article" title="Thiết kế – xây dựng nhà ở thời 4.0: Lựa chọn từ đơn vị thiết kế cho đến nhà cung cấp sản phẩm chỉ trong 10 phút"> <b>Thiết kế – xây dựng nhà ở thời 4.0 </b></a><br /> <i>Những phương thức mua bán sản phẩm, dịch vụ đã hoàn toàn thay đổi khi bước vào thời đại của công nghệ 4.0.... </i><br /><br />
+            <a href="https://homedy.com/news/thiet-ke-xay-dung-nha-o-thoi-40-lua-chon-tu-don-vi-thiet-ke-cho-den-nha-cung-cap-san-pham-chi-trong-10-phut-ne3973?src=home_box_article" class="btn-blue" title="Thiết kế – xây dựng nhà ở thời 4.0: Lựa chọn từ đơn vị thiết kế cho đến nhà cung cấp sản phẩm chỉ trong 10 phút">Chi tiết</a><br /><br />
+            </p>
+
+    </div>
+    <div id="content-left-left" style="margin-left:25px">
+    <img src="Image/tintuc2.jpg"width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <i>11/12/2018</i><br /> <a class="link2" href="https://homedy.com/news/nen-tang-sieu-ket-noi-myhomedy-ra-mat-gioi-kien-truc-tai-trien-lam-vietbuild-11-2018-ne3974?src=home_box_article" title="Nền tảng ‘siêu kết nối’ MyHomedy ra mắt giới Kiến trúc tại Triển lãm Vietbuild 11/2018"> <b>Nền tảng ‘siêu kết nối’ MyHomedy </b></a><br /> <i>Từ 23-27/11, Triển lãm Quốc tế Vietbuild sẽ quy tụ các doanh nghiệp lớn trong lĩnh vực Xây dựng, Kiến trúc.... </i><br /><br />
+            <a href="https://homedy.com/news/nen-tang-sieu-ket-noi-myhomedy-ra-mat-gioi-kien-truc-tai-trien-lam-vietbuild-11-2018-ne3974?src=home_box_article" class="btn-blue" title="Nền tảng ‘siêu kết nối’ MyHomedy ra mắt giới Kiến trúc tại Triển lãm Vietbuild 11/2018">Chi tiết</a><br /><br />
+            </p>
+
+    </div>
+    <div id="content-left-left" style="margin-left:25px">
+    <img src="Image/tintuc3.png"width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <i>11/12/2018</i><br /> <a class="link2" href="https://homedy.com/news/nhung-con-so-gay-shock-ve-su-kien-vinfast-ra-mat-xe-ne3971?src=home_box_article" title="Những con số gây shock về sự kiện VinFast ra mắt xe"> <b>Những con số gây shock về sự kiện VinFast ra mắt xe </b></a><br /> <i>2.000 chiếc xe đã được đặt mua chỉ trong vòng 17 tiếng mở bán chính thức, trong đó, 300 chiếc VinFast Klara đã được mua hết chỉ sau 15 phút..... </i><br /><br />
+            <a href="https://homedy.com/news/nhung-con-so-gay-shock-ve-su-kien-vinfast-ra-mat-xe-ne3971?src=home_box_article" class="btn-blue" title="Những con số gây shock về sự kiện VinFast ra mắt xe">Chi tiết</a><br /><br />
+            </p>
+
+    </div>
+    <div id="content-left-left" style="margin-left:25px">
+    <img src="Image/tintuc4.jpg"width="275px" height="200px" />
+            <p style="padding-left:10px; font-size:15px"> <i>1/2/2018</i><br /> <a class="link2" href="https://homedy.com/news/mua-nha-tho-cu-xay-san-dung-bo-qua-dieu-nay-ne3962" title="Mua nhà thổ cư xây sẵn, đừng bỏ qua điều này!"><b>Mua nhà thổ cư xây sẵn, đừng bỏ qua điều này! </b></a><br /> <i>Nhiều người lựa chọn mua nhà thổ cư xây sẵn để kiệm thời gian, công sức và tiền bạc tuy nhiên cũng nên tránh "tiền mất tật mang"... </i><br /><br />
+            <a href="https://homedy.com/news/mua-nha-tho-cu-xay-san-dung-bo-qua-dieu-nay-ne3962" class="btn-blue" title="Mua nhà thổ cư xây sẵn, đừng bỏ qua điều này!">Chi tiết</a><br /><br />
+            </p>
+
+    </div>
+ </div>
+         <!-- Footer -->
+        <div class="footer1">
+
+            <div class="col-sm-3">
+            <ul style="list-style-type:none">
+                            <li style="font-size:18px; font-weight:bold"><a href="https://homedy.com/ban-nha-dat-ha-noi?src=footer" title="Bất động sản Hà nội">Bất động sản Hà nội</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-cau-giay-ha-noi?src=footer" title="Bán nhà đất quận Cầu Giấy">Bán nhà đất quận Cầu Giấy</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-dong-da-ha-noi?src=footer" title="Bán nhà đất quận Đống Đa">Bán nhà đất quận Đống Đa</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-ba-dinh-ha-noi?src=footer" title="Bán nhà đất quận Ba Đình">Bán nhà đất quận Ba Đình</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-thanh-xuan-ha-noi?src=footer" title="Bán nhà đất quận Thanh Xuân">Bán nhà đất quận Thanh Xuân</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-hoang-mai-ha-noi?src=footer" title="Bán nhà đất quận Hoàng Mai">Bán nhà đất quận Hoàng Mai</a></li>
+                            </ul>
+            </div>
+            <div class="col-sm-3">
+            <ul style="list-style-type:none">
+                            <li style="font-size:18px; font-weight:bold"><a href="https://homedy.com/ban-nha-dat-tp-ho-chi-minh?src=footer" title="Bất động sản TP HCM">Bất động sản TP HCM</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-huyen-binh-chanh-tp-ho-chi-minh?src=footer" title="Bán nhà đất Bình Chánh">Bán nhà đất Bình Chánh</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-binh-tan-tp-ho-chi-minh?src=footer" title="Bán nhà đất Bình Tân">Bán nhà đất Bình Tân</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-huyen-can-gio-tp-ho-chi-minh?src=footer" title="Bán nhà đất Cần giờ">Bán nhà đất Cần Giờ</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-huyen-cu-chi-tp-ho-chi-minh?src=footer" title="Bán nhà đất Củ Chi">Bán nhà đất Củ Chi</a></li>
+                            <li><a href="https://homedy.com/ban-nha-dat-quan-go-vap-tp-ho-chi-minh?src=footer" title="Bán nhà đất Gò Vấp">Bán nhà đất Gò Vấp</a></li>
+                           
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                        <ul style="list-style-type:none">
+                            <li style="font-size:18px; font-weight:bold"><a href="https://homedy.com/ban-nha-dat?src=footer" title="Mua bán nhà đất">Mua bán bất động sản</a></li>
+                            <li><a href="https://homedy.com/ban-nha-rieng?src=footer" title="Chung cư TP HCM">Mua bán nhà riêng</a></li>
+                            <li><a href="https://homedy.com/ban-can-ho-chung-cu?src=footer" title="Căn hộ chung cư">Căn hộ chung cư</a></li>
+                            <li><a href="https://homedy.com/ban-dat-da-nang?src=footer" title="Đất nền Đà Nẵng">Đất nền Đà Nẵng</a></li>
+                            <li><a href="https://homedy.com/ban-dat-binh-duong?src=footer" title="Đất nền Bình Dương">Đất nền Bình Dương</a></li>
+                            <li><a href="https://homedy.com/ban-dat-long-an?src=footer" title="Đất nền Long An">Đất nền Long An</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                        <ul style="list-style-type:none">
+                            <li style="font-size:18px; font-weight:bold"><a href="https://homedy.com/cho-thue-nha-dat?src=footer" title="Bất động sản cho thuê">Cho thuê bất động sản</a></li>
+                            <li><a href="https://homedy.com/cho-thue-van-phon?src=footer" title="Cho thuê văn phòng">Cho thuê văn phòng</a></li>
+                            <li><a href="https://homedy.com/cho-thue-can-ho-chung-cu?src=footer" title="Cho thuê căn hộ chung cư">Cho thuê căn hộ chung cư</a></li>
+                            <li><a href="https://homedy.com/cho-thue-dat-nha-xuong-kho-bai?src=footer" title="Cho thuê nhà xưởng">Cho thuê nhà xưởng</a></li>
+                            <li><a href="https://homedy.com/cho-thue-nha-riengt?src=footer" title="Cho thuê nhà nguyên căn">Cho thuê nhà nguyên căn</a></li>
+                            <li><a href="https://homedy.com/cho-thue-nha-tro-phong-tro?src=footer" title="Cho thuê phòng trọ">Cho thuê phòng trọ</a></li>
+                            </ul>
+                        </div>
+
+
+       </div>
+
+    <div id="footer">
+        <div class="copyright">
+            <div class="container">
+                <div class="footer-min">
+                    <p>
+                        Copyright 2018 - <a href="SaiGonRealEstate.html"> SaigonRealEstate</a><br/>
+                        Văn phòng thường trực tại Tp.HCM<br/>
+                        842/1/33 Nguyễn Đình Chiểu, Phường 3, Quận 3, Tp.HCM<br/>
+                        Điện thoại: (028) 39897939<br/>
+                        Email: saigonrealestate.vn<br/><br />
+	   <div>
+        <span style="text-transform: uppercase;font-weight: bold;line-height: 2;padding-right: 5px;">Follow us</span>
+        <a href="https://www.youtube.com/watch?v=6DlFbDHSW0Y&t=62s" target="_blank">
+            <img style="width: 30px;" src="Image/dutube.png">
+        </a>
+        <a href="https://www.facebook.com/groups/freetutsdotnet/" target="_blank">
+            <img style="width: 30px;" src="Image/fb.png">
+        </a>
+        <a href="https://plus.google.com/u/0/+createwebsitenet" target="_blank">
+            <img style="width: 30px;" src="Image/g+.png">
+        </a>
+        <a href="https://www.linkedin.com/company/create-website/" target="_blank">
+            <img style="width: 30px;" src="Image/in.png">
+        </a>
+        <a href="https://twitter.com/search?q=WebSite&src=tyah" target="_blank">
+            <img style="width: 30px;" src="Image/tweet.png">
+        </a>
+    </div>
+    
+                    </p>
+                </div><!-- end footer cold -->
+            </div><!-- end container -->
+    </div>
+</div>
+<form id="chat-online" style=" border:double #0000FF; width:300px; background-color:#CFF">
+<div id="hotro"> <h3>Hỗ trợ tư vấn</h3> <img  src="Image/chat.jpg"/>
+<img src="Image/add.jpg" width="40"class="an-hien"/>
+</div>
+<div class="content">
+                    <table cellspacing="5px">
+                      	<tr>
+                        <td >
+                        <label for="name">Họ và Tên: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id="name" name="name" placeholder="Nguyễn Thị Thùy Trang">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="email">Email: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="email" id="lname" name="email" placeholder="trangnguyenahn@gmail.com">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <label for="phone">Số điện thoại: </label><br />
+                        </td>
+                        <td>
+                        <input style="width:200px" type="text" id=phone"" name="phone" placeholder="0963697461">
+                        </td> 
+                        </tr> 
+                        <tr>
+                        <td>   
+                        <label for="mesenger">Tin nhắn: </label><br />
+                        </td>
+                        <td>
+                        <textarea style="width:200px; height: 100px" id="mesenger"name="mesenger" placeholder="Bạn cần chúng tôi tư vấn về gì? Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất"></textarea>
+                    	</td>
+                        </tr>
+                        <tr>
+                        <td colspan="2" align="center">
+                        <input style=" background-color:#0F3; width:70px" type="submit" value="Submit"/>
+                        </td>
+                        </tr>
+                        </table>
+
+</div>
+</form>
+</div>
+</body>
+<script>// đoạn script cho content-right
+      //khai báo biến slideIndex đại diện cho slide hiện tại
+      var slideIndex;
+      // KHai bào hàm hiển thị slide
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+
+          slides[slideIndex].style.display = "block";  
+          dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+          slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+          if (slideIndex > slides.length - 1) {
+            slideIndex = 0
+          }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 5000);
+      }
+      //mặc định hiển thị slide đầu tiên 
+      showSlides(slideIndex = 0);
+
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+    </script>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Form hỗ trợ trực tuyến</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.an-hien').on({
+											'click':function(){
+												var src=($(this).attr('src')==='add.jpg')
+												? 'an.jpg'
+												:'add.jpg';
+												//cũng giống như if else
+												//nếu src mà bằng add.png thì sẽ lấy hình an.png ngược lại thì lấy add.png
+												//alert(src);
+												if(src=='an.jpg'){
+													$(this).attr('src',src);
+													$("div.content").css("display","block").show();
+													//$("div.content").show("slow");// dùng để show ra form
+												}
+												else{
+													$(this).attr('src',src);
+													$("div.content").css("display","none");
+													//$("div.content").hide(1000); // dùng để ẩn form
+												}
+											}
+											});
+    
+});
+</script>
+
+<style type="text/css">
+#chat-online{ margin:0px auto; position:fixed; right:0; bottom:0;}
+#hotro{ padding:10px 10px; border:1px solid #ccc; margin:0px;width:397px;}
+#chat-online{width:400px;}
+div.content{ width:auto; border:1px solid #ccc; display:none;}
+h4{color:red;}
+.check{ font-family:#;}
+#send{padding: 5px 5px; width:100px;}
+.an-hien{margin-left:40px;
+input{ width:200px;padding:5px 5px; font-family:#;}
+}
+
+</style>
+</head>
+
+<body>
+<form id="chat-online" style=" border:double #0000FF; width:350px; background-color:#CFF">
+<div id="hotro"> <h4>HỖ TRỢ TRỰC TUYẾN</h4> <img src="chat.jpg"/>
+<img src="add.jpg" width="40"class="an-hien"/>
+</div>
+<div class="content">
+<label> Họ tên</label><br />
+<input type="text" value="" /><br />
+<label> Email</label><br />
+<input type="email" value="" /><br>
+<label>Điện thoại</label><br />
+<input type="text" value="" /><br />
+<label> Massage</label><br />
+<textarea cols="30" rows="10" class="check" style="margin:0px; height:154px; width:297px;"></textarea><br />
+<input type="button" name="send" value="Send" onclick="alert('Cảm ơn bạn đã nhắn tin cho chúng tôi. Chúng tôi sẽ trả lời trong thời gian sớm nhất!');" />
+</div>
+</form>
+</body>
+</html>
